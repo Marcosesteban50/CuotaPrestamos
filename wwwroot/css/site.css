@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+
+
+    
+
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: 60px;
+    }
+
+
+   
+
+    h1 {
+        text-align: center;
+        color: transparent;
+        font-size: 60px;
+        letter-spacing: 5px;
+        transition: 0.5s;
+        animation: animate 2.5s linear infinite;
+    }
+
+
+    @keyframes animate {
+        0%,10% {
+            color: transparent;
+        }
+
+        50% {
+            color: lightgray;
+        }
+
+        100% {
+            color: transparent;
+        }
+    }
+
+
+   
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+  
+
+
+
+    html {
+        font-size: 16px;
+        position: relative;
+        min-height: 100%;
+    }
+
+    
+
+
+
+
+    h1 {
+        text-align: center;
+        color: transparent;
+        font-size: 30px;
+        letter-spacing: 5px;
+        transition: 0.5s;
+        animation: animate 2.5s linear infinite;
+    }
+
+
+    @keyframes animate {
+        0%,10% {
+            color: transparent;
+        }
+
+        50% {
+            color: lightgray;
+        }
+
+        100% {
+            color: transparent;
+        }
+    }
+
+    
+   
+}
+
+
+
+
