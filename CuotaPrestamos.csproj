@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Imagenes\" />
+    <Folder Include="Servicios\" />
   </ItemGroup>
 
 </Project>
