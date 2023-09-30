@@ -4,13 +4,35 @@ html {
 
 
 
+
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 
 
+    .con {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+        padding:50px;
+    }
 
+
+    form {
+        background: black;
+        width: 30%;
+        color: ghostwhite;
+        margin-top:30%;
+        position:relative;
+        bottom:120px;
+        padding-bottom: 20px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
     
 
 
@@ -60,10 +82,42 @@ html {
 @media (max-width: 768px) {
 
 
+    
 
 
-  
+    h1{
+        
+      
+        margin-top:40px;
+    }
 
+
+    .con {
+       
+        flex-direction: column;
+        position:relative;
+        top:40px;
+        
+        
+    }
+
+
+    form {
+        background: black;
+        width: 70%;
+        color: ghostwhite;
+        padding-bottom: 20px;
+        text-align: center;
+       position:relative;
+       top:70px;
+       left:15%;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+   
+     
+    
+   
 
 
     html {
@@ -93,7 +147,7 @@ html {
         }
 
         50% {
-            color: lightgray;
+            color: white;
         }
 
         100% {
