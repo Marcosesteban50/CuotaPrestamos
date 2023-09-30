@@ -1,8 +1,21 @@
+using CuotaPrestamos.Extensiones;
+using DinkToPdf;
+using DinkToPdf.Contracts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+var context = new CustomAssemblyLoadContext();
+
+context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(),
+    "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\LibreriaPDF\\libwkhtmltox.dll"));
+
+
+builder.Services.AddSingleton(typeof(IConverter),
+    new SynchronizedConverter(new PdfTools()));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

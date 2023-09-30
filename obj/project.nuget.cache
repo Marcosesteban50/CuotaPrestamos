@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Z+176RZnRtHO7Bp+hcxS4m1mXCMM16Ng47VgPvhrG09uqtQx7xbQkZcplRZJ/gq5kF6V0kuQR9s6DpfFirw5eQ==",
+  "dgSpecHash": "XBw1nkIpWGT332vBfeoqnpQ/JZisBOsLTW3FRieAeb04rd0A6ELE4trk3/KBxPEJBSt7Xdc9O5QOdA3gPnenBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\CuotaPrestamos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\junio\\.nuget\\packages\\closedxml\\0.102.1\\closedxml.0.102.1.nupkg.sha512",
+    "C:\\Users\\junio\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\irony.netcore\\1.0.11\\irony.netcore.1.0.11.nupkg.sha512",
@@ -80,6 +81,7 @@
     "C:\\Users\\junio\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\junio\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\junio\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",

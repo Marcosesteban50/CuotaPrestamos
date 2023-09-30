@@ -29,3 +29,15 @@ C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Debug\net6.0
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Debug\net6.0\CuotaPrestamos.pdb
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Debug\net6.0\CuotaPrestamos.genruntimeconfig.cache
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Debug\net6.0\ref\CuotaPrestamos.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\ClosedXML.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\ExcelNumberFormat.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\Irony.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\XLParser.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Debug\net6.0\CuotaPrestamos.csproj.CopyComplete
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\LibreriaPDF\libwkhtmltox.dll
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\LibreriaPDF\libwkhtmltox.dylib
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\LibreriaPDF\libwkhtmltox.so
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Debug\net6.0\DinkToPdf.dll
