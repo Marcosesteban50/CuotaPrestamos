@@ -48,6 +48,10 @@
             "DinkToPdf": {
               "target": "Package",
               "version": "[1.0.8, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [

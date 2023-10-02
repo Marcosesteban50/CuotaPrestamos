@@ -1,4 +1,3 @@
-using CuotaPrestamos.Extensiones;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 
@@ -8,14 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-var context = new CustomAssemblyLoadContext();
 
-context.LoadUnmanagedLibrary(Path.Combine(Directory.GetCurrentDirectory(),
-    "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\LibreriaPDF\\libwkhtmltox.dll"));
-
-
-builder.Services.AddSingleton(typeof(IConverter),
-    new SynchronizedConverter(new PdfTools()));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,5 +28,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=DatosClientes}/{action=Crear}/{id?}");
+
+
+IWebHostEnvironment env = app.Environment;
+Rotativa.AspNetCore.RotativaConfiguration.Setup
+    (env.WebRootPath, "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\Rotativa\\Windows\\");
+
 
 app.Run();

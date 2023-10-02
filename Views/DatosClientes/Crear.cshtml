@@ -1,6 +1,11 @@
 ﻿@model DatosCliente
 
 
+@{
+    ViewData["Title"] = "Calculadora Prestamos";
+}
+
+
 
 
 
@@ -16,20 +21,21 @@
     <form asp-action="Crear">
         <div class="mb-3">
             <label asp-for="Monto_Del_Prestamo" class="form-label"></label>
-            <input type="number" id="Monto_Del_Prestamo" name="Monto_Del_Prestamo" placeholder="Digite El Monto" class="form-control" />
+            <input type="number" asp-for="Monto_Del_Prestamo" name="Monto_Del_Prestamo" placeholder="Digite El Monto" class="form-control" />
 
             <span asp-validation-for="Monto_Del_Prestamo" class="text-danger"></span>
         </div>
         <div class="mb-3">
             <label asp-for="Plazo" class="form-label"></label>
-            <input type="number" id="Plazo" name="Plazo" placeholder="Digite Su Plazo" class="form-control" />
+            <input type="number" asp-for="Plazo" name="Plazo" placeholder="Digite Su Plazo" class="form-control" />
             <span asp-validation-for="Plazo" class="text-danger"></span>
 
         </div>
         <div class="mb-3">
             <label asp-for="tasa_interes_anual" class="form-label"></label>
-            <input type="number" id="tasa_interes_anual" name="tasa_interes_anual" placeholder="Digite El Interes"
+            <input type="number" asp-for="tasa_interes_anual" name="tasa_interes_anual" placeholder="Digite El Interes"
                    class="form-control" />
+
 
             <span asp-validation-for="tasa_interes_anual" class="text-danger"></span>
 
@@ -46,13 +52,21 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                Go
+                Visualizar
             </button>
+
+            <button type="submit" class="btnCalcular" asp-action="ImprimirVenta">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                PDF
+            </button>
+
+           
+
+            
         </div>
-
-
-
-
 
 
     </form>
@@ -62,6 +76,21 @@
 </div>
 
 
+
+
+
+<div class="btnTabla">
+
+
+    <a class="btnCalcular" asp-action="Crear">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Reiniciar
+    </a>
+</div>
 
 
 

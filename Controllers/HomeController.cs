@@ -1,22 +1,32 @@
 ﻿using CuotaPrestamos.Models;
+using DinkToPdf;
+using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Rotativa.AspNetCore;
 using System.Diagnostics;
 
 namespace CuotaPrestamos.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        
+        public HomeController()
         {
-            _logger = logger;
+            
         }
+            
+
+       
+
 
         public IActionResult Index()
         {
             return View();
         }
+
+       
 
         public IActionResult Privacy()
         {

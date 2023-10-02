@@ -3,7 +3,8 @@
 @{
     ViewData["Title"] = "tabla";
 
-    float Monto_Prestamo = Model.Monto_Del_Prestamo;
+    float Monto_Prestamo =Model.Monto_Del_Prestamo;
+    
     int Plazo = Model.Plazo;
     float InteresMensual = Model.tasa_interes_mensual;
     float InteresAnual = Model.tasa_interes_anual;
@@ -22,66 +23,93 @@
     Pago = InteresMensual + Pago;
     Pago = Monto_Prestamo * Pago;
 
-    
-  
+
+
 
 }
 
 
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
 
-            <th>#</th>
-            <th>Pago</th>
-            <th>InteresPagado</th>
-            <th>CapitalPagado</th>
-            <th>MontoPrestamo</th>
+<div class="DivEncimaTabla">
 
-        </tr>
-    </thead>
-
-
-
-    @for (i = 1; i <= Plazo; i++)
-    {
-        InteresPagado = InteresMensual * Monto_Prestamo;
-
-        CapitalPagado = Pago - InteresPagado;
-        Monto_Prestamo = Monto_Prestamo - CapitalPagado;
-
-        <tbody>
+    <table class="table table-bordered tableAmortizada">
+        <thead>
             <tr>
-                <td>
-                    @i
-                </td>
-                <td>
-                    @Pago
-                </td>
-                <td>
-                    @InteresPagado
-                </td>
-                <td>
-                    @CapitalPagado
-                </td>
-                <td>
-                    
-                    @Monto_Prestamo
-                </td>
+
+                <th>#</th>
+                <th>Pago</th>
+                <th>InteresPagado</th>
+                <th>CapitalPagado</th>
+                <th>MontoPrestamo</th>
+
             </tr>
-        </tbody>
-
-    }
-</table>
+        </thead>
 
 
 
+        @for (i = 1; i <= Plazo; i++)
+        {
+            InteresPagado = InteresMensual * Monto_Prestamo;
+
+            CapitalPagado = Pago - InteresPagado;
+            Monto_Prestamo = Monto_Prestamo - CapitalPagado;
+
+            <tbody>
+                <tr>
+                    <td>
+                        @i
+                    </td>
+                    <td>
+                        @Math.Round(Pago,2)
+                    </td>
+                    <td>
+                    @Math.Round(InteresPagado,2)
+                    </td>
+                    <td>
+                    @Math.Round(CapitalPagado,2)
+                    </td>
+                    <td>
+
+                    @Math.Round(Monto_Prestamo,2)
+                    </td>
+                </tr>
+            </tbody>
+
+        }
+    </table>
+</div>
 
 
-<a class="btn btn-primary" asp-action="Crear">Reiniciar</a>
-<a class="btn btn-success" asp-action="ExportarExcelM">Excel</a>
-<a class="btn btn-danger" asp-action="ExportarPDFM">PDF</a>
+
+
+
+
+
+
+
+    <div class="btnTabla">
+
+
+    <a class="btnCalcular" asp-action="Crear">
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Reiniciar</a>
+   </div>
+
+<a type="submit" class="btnCalcular" asp-action="ImprimirVenta">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    PDF
+</a>
+
+
+   
 
 
                     <style>
@@ -89,5 +117,9 @@
         background-color: white;
         height: 100vh;
     }
+
+   
+
+   
 
                     </style>
