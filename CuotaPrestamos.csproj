@@ -7,17 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Imagenes\FotoFondo.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
-    <Folder Include="Servicios\" />
+    <None Include="wwwroot\Imagenes\FotoFondo.jpeg" />
+    <None Include="wwwroot\Imagenes\FotoFondo1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.102.1" />
+    <PackageReference Include="Dapper" Version="2.1.4" />
     <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
     <PackageReference Include="Rotativa.AspNetCore" Version="1.2.0" />
   </ItemGroup>
 

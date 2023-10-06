@@ -45,9 +45,21 @@
               "target": "Package",
               "version": "[0.102.1, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "DinkToPdf": {
               "target": "Package",
               "version": "[1.0.8, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             },
             "Rotativa.AspNetCore": {
               "target": "Package",

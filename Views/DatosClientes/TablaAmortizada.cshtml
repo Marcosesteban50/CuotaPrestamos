@@ -33,15 +33,15 @@
 
 <div class="DivEncimaTabla">
 
-    <table class="table table-bordered tableAmortizada">
+    <table class="table table-borderless table-hover tableAmortizada">
         <thead>
-            <tr>
+            <tr class="tr1Amortizado" style="background:saddlebrown">
 
                 <th>#</th>
                 <th>Pago</th>
-                <th>InteresPagado</th>
-                <th>CapitalPagado</th>
-                <th>MontoPrestamo</th>
+                <th>Interes</th>
+                <th>Capital</th>
+                <th>Monto del prestamo</th>
 
             </tr>
         </thead>
@@ -56,24 +56,69 @@
             Monto_Prestamo = Monto_Prestamo - CapitalPagado;
 
             <tbody>
-                <tr>
-                    <td>
+                <tr class="trAmortizada">
+                    <td style="font-size:20px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+
                         @i
                     </td>
-                    <td>
-                        @Math.Round(Pago,2)
-                    </td>
-                    <td>
-                    @Math.Round(InteresPagado,2)
-                    </td>
-                    <td>
-                    @Math.Round(CapitalPagado,2)
-                    </td>
-                    <td>
+                    @if (Pago < 0)
+                    {
 
-                    @Math.Round(Monto_Prestamo,2)
-                    </td>
+                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            @Math.Round(Pago,2)
+                        </td>
+                    }
+                    else
+                    {
+                        <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
+                            @Math.Round(Pago,2)
+                        </td>
+                    }
+                    @if (Pago < 0)
+                    {
+
+                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            @Math.Round(InteresPagado,2)
+                        </td>
+                    }
+                    else
+                    {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
+                            @Math.Round(InteresPagado,2)
+                        </td>
+                    }
+                    @if (Pago < 0)
+                    {
+
+                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            @Math.Round(CapitalPagado,2)
+                        </td>
+                    }
+                    else
+                    {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
+                            @Math.Round(CapitalPagado,2)
+                        </td>
+                    }
+
+                    @if (Monto_Prestamo < 1)
+                    {
+
+                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            @Math.Round(Monto_Prestamo,4)
+                        </td>
+                    }
+                    else
+                    {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                            @Math.Round(Monto_Prestamo,2)
+                        </td>
+                    }
+
+                    
+                    
                 </tr>
+                
             </tbody>
 
         }
@@ -98,27 +143,40 @@
         <span></span>
         <span></span>
         Reiniciar</a>
+
+    <a class="btnCalcular" asp-action="ImprimirVenta">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        PDF
+    </a>
+    
    </div>
 
-<a type="submit" class="btnCalcular" asp-action="ImprimirVenta">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    PDF
-</a>
+
+
+
+
 
 
    
 
 
                     <style>
-    .container1 {
-        background-color: white;
-        height: 100vh;
+    body {
+        min-height: 100vh;
+        position: absolute;
+        inset: 0;
+        background: url(../Imagenes/FondoHerramientas.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        
     }
 
-   
+    
 
    
 

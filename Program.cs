@@ -1,9 +1,9 @@
-using DinkToPdf;
-using DinkToPdf.Contracts;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
 
 
@@ -18,10 +18,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 
 app.UseAuthorization();
 
@@ -31,8 +33,9 @@ app.MapControllerRoute(
 
 
 IWebHostEnvironment env = app.Environment;
+
 Rotativa.AspNetCore.RotativaConfiguration.Setup
-    (env.WebRootPath, "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\Rotativa\\Windows\\");
+    (env.WebRootPath, "CuotaPrestamos\\Windows\\");
 
 
 app.Run();

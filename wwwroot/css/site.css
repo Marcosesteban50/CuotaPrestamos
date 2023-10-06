@@ -12,6 +12,15 @@ html {
     }
 
 
+    .divsito {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+
     .con {
         display:flex;
         justify-content:center;
@@ -22,17 +31,20 @@ html {
 
 
     form {
-        background: black;
+        background: sandybrown;
         width: 30%;
-        color: ghostwhite;
-        margin-top:30%;
-        position:relative;
-        right:150px;
-        bottom:120px;
+        color: saddlebrown;
+        margin-top: 30%;
+        position: relative;
+        right: 150px;
+        bottom: 120px;
         padding-bottom: 20px;
         text-align: center;
-        border: 1px solid white;
-        border-radius: 15px;
+        border: 1px solid brown;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        
+        opacity: 0.8;
     }
     
 
@@ -44,19 +56,56 @@ html {
 
     body {
         margin-bottom: 60px;
+        
     }
 
 
-   
+    .wavy{
+        position:relative;
+        -webkit-box-reflect:below -12px linear-gradient(transparent,rgba(0,0,0,0.3));
+        
+
+    }
+
+    .wavy span{
+        position:relative;
+        display:inline-block;
+        animation:animate 1.2s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--i));
+    }
+
+    @keyframes animate{
+        0%{
+            transform:translateY(0px);
+            
+        }
+        20% {
+            transform: translateY(-15px);
+            
+        }
+        40%,100% {
+            transform: translateY(0px);
+            
+        }
+    }
+
 
     h1 {
         text-align: center;
-        color: white;
+        color: sandybrown;
         font-size: 60px;
         letter-spacing: 5px;
         transition: 0.5s;
+        -webkit-text-stroke: 0.1vw lightyellow;
+        text-transform:uppercase;
+        
+        margin-top:100px;
+        margin-right:100px
+        
         
     }
+
+       
 
 
    
@@ -64,7 +113,7 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 140px;
         gap: 30px;
     }
 
@@ -74,95 +123,145 @@ html {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 948px) {
 
 
-    
 
 
-    h1{
+    .form-control {
         
-      
-        margin-top:40px;
-    }
-
-
-    .con {
+        background-color: sandybrown;
+        
        
-        flex-direction: column;
-        position:relative;
-        top:40px;
-        gap:0;
         
         
     }
+
+        .form-control:focus {
+            background-color: sandybrown;
+            box-shadow: none;
+            border-bottom: 1px solid brown;
+            color: white;
+        }
+
+        .form-control:hover {
+            color: white;
+            border-bottom: 1px solid brown;
+        }
+
+
+    .wavy {
+        position: relative;
+        -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0.3));
+    }
+
+        .wavy span {
+            position: relative;
+            display: inline-block;
+            animation: animate 1.2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+    @keyframes animate {
+        0% {
+            transform: translateY(0px);
+        }
+
+        20% {
+            transform: translateY(-15px);
+        }
+
+        40%,100% {
+            transform: translateY(0px);
+        }
+    }
+
+
+
+        .po {
+            padding: 10px 22px;
+        }
+
+        .divsito {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+
+
+        h1 {
+            margin-top: 40px;
+        }
+
+
+        .con {
+            flex-direction: column;
+            position: relative;
+            top: 40px;
+            gap: 0;
+        }
 
 
     form {
-        background: black;
+        background-color: sandybrown;
         width: 70%;
         color: ghostwhite;
         padding-bottom: 20px;
         text-align: center;
-       position:relative;
-       top:70px;
-       left:15%;
-        border: 1px solid white;
-        border-radius: 15px;
-    }
-
-
-
-    .btnTabla {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 200px;
-        
-    }
-
-
-    html {
-        font-size: 16px;
         position: relative;
-        min-height: 100%;
-    }
-
-    
-
-
-
-
-    h1 {
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        letter-spacing: 5px;
-        transition: 0.5s;
-        
+        top: 70px;
+        left: 15%;
+        border: 1px solid white;
+        border-top-left-radius:70px;
+        border-bottom-right-radius:70px;
+        opacity: 0.8;
     }
 
 
-  
 
-    
-   
-}
+        .btnTabla {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
 
-.DivEncimaTabla {
-    background: gray;
-    
-    position:relative;
-    top:100px;
-    text-align: center;
-    box-shadow:10px 20px 10px 10px;
-    
-}
 
-.tableAmortizada {
-    border: 1px solid black;
-    
-}
+        html {
+            font-size: 16px;
+            position: relative;
+            min-height: 100%;
+        }
+
+
+
+
+
+
+        h1 {
+            text-align: center;
+            color: transparent;
+            font-size: 30px;
+            letter-spacing: 5px;
+            transition: 0.5s;
+            -webkit-text-stroke: 0.3vw sandybrown;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button {
     position: relative;
@@ -171,30 +270,35 @@ button {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    background: #262c37;
+    background: saddlebrown;
     letter-spacing: 2px;
     font-size: 16px;
     margin: 0 15px;
-    transition: 0s;
+    transition: 0.3s;
     border: none;
+    border-radius:10px;
+    /*border-top-left-radius:70px;
+    border-bottom-right-radius:70px;*/
 }
 
 
 
     button:hover {
-        color: #1f242d;
+        color: saddlebrown;
         transition: 0.5s;
         background: white;
-        transition-delay: 0.3s;
+       
+        letter-spacing:4px;
     }
 
     button span {
         display: block;
         position: absolute;
         background: white;
+        
     }
 
-        button span:nth-child(1) {
+     /*   button span:nth-child(1) {
             left: 0;
             bottom: 0;
             width: 1px;
@@ -202,12 +306,14 @@ button {
             transform: scaleY(0);
             transform-origin: top;
             transition: transform 0.06s;
-        }
+            
+        }*/
 
-    button:hover span:nth-child(1) {
+  /*  button:hover span:nth-child(1) {
         transform: scaleY(1);
         transform-origin: bottom;
         transition: transform 0.06s;
+        
     }
 
 
@@ -221,6 +327,7 @@ button {
         transform-origin: right;
         transition: transform 0.06s;
         transition-delay: 0.06s;
+        
     }
 
     button:hover span:nth-child(2) {
@@ -228,6 +335,7 @@ button {
         transform-origin: left;
         transition: transform 0.06s;
         transition-delay: 0.06s;
+        
     }
 
     button span:nth-child(3) {
@@ -239,6 +347,7 @@ button {
         transform-origin: bottom;
         transition: transform 0.06s;
         transition-delay: 0.1s;
+        
     }
 
     button:hover span:nth-child(3) {
@@ -246,6 +355,7 @@ button {
         transform-origin: top;
         transition: transform 0.06s;
         transition-delay: 0.1s;
+        
     }
 
     button span:nth-child(4) {
@@ -257,6 +367,7 @@ button {
         transform-origin: left;
         transition: transform 0.06s;
         transition-delay: 0.18s;
+        
     }
 
     button:hover span:nth-child(4) {
@@ -264,18 +375,13 @@ button {
         transform-origin: right;
         transition: transform 0.06s;
         transition-delay: 0.18s;
+        
     }
+*/
 
 
 
 
-
-.divsito {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -346,13 +452,44 @@ button {
 
 
 
+.btnCalcular {
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: sandybrown;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+    /*border-top-left-radius:70px;
+    border-bottom-right-radius:70px;*/
+}
+
+
+
+    .btnCalcular:hover {
+        color: sandybrown;
+        transition: 0.5s;
+        background: white;
+        letter-spacing: 4px;
+    }
+
+    .btnCalcular span {
+        display: block;
+        position: absolute;
+        background: white;
+    }
 
 
 
 
 
-
-
+/*
 a {
     position: relative;
     display: inline-block;
@@ -451,7 +588,7 @@ a {
         transform-origin: right;
         transition: transform 0.12s;
         transition-delay: 0.37s;
-    }
+    }*/
 
 
 
@@ -474,14 +611,23 @@ input::-webkit-inner-spin-button {
 
 
 .container1 {
-    background-color: black;
+  
     height: 100vh;
 }
 
 
-body {
+.background {
     min-height: 100vh;
-    overflow: hidden;
+    position:absolute;
+    inset:0;
+    background-image:url(../Imagenes/FondoHerramientas.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    filter:blur(4px);
+    
+    
+
 }
 
 
@@ -500,11 +646,12 @@ body {
     position: relative;
     align-items: center;
     padding: 10px 0;
-    background: transparent;
+    background-color:saddlebrown;
     border: none;
     width: 80%;
     margin-left: 10%;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid brown;
+    border-radius:10px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -513,15 +660,20 @@ body {
 }
 
     .form-control:focus {
-        background-color: black;
-        box-shadow: none;
-        border-bottom: 1px solid white;
+        background-color: saddlebrown;
+        box-shadow: none;e
+        border-bottom: 1px solid brown;
         color: white;
 
     }
     .form-control:hover {
         color: white;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid brown;
+    }
+
+
+    .form-control::placeholder{
+        color:sandybrown;
     }
 label {
     padding: 10px 0;
@@ -530,6 +682,20 @@ label {
     text-transform: uppercase;
 }
 
+.DivEncimaTabla {
+    background: #edc9af;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px;
+    border-radius: 20px;
+}
+.tableAmortizada {
+    border-radius: 20px;
+    overflow: hidden;
+}
 
-
-
+.trAmortizada:hover {
+    background: sandybrown;
+    transition: 0.2s;
+}

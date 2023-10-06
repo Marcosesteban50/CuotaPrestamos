@@ -17,18 +17,43 @@
 
 <div class="con">
 
-    <h1>CALCULADORA PRESTAMOS</h1>
+    <h1 class="wavy">
+        <span style="--i:1;">C</span>
+        <span style="--i:2;">A</span>
+        <span style="--i:3;">L</span>
+        <span style="--i:4;">C</span>
+        <span style="--i:5;">U</span>
+        <span style="--i:6;">L</span>
+        <span style="--i:7;">A</span>
+        <span style="--i:8;">D</span>
+        <span style="--i:9;">O</span>
+        <span style="--i:10;">R</span>
+        <span style="--i:11;">A</span>
+        <br>
+        <span style="--i:1;">P</span>
+        <span style="--i:2;">R</span>
+        <span style="--i:3;">E</span>
+        <span style="--i:4;">S</span>
+        <span style="--i:5;">T</span>
+        <span style="--i:6;">A</span>
+        <span style="--i:7;">M</span>
+        <span style="--i:8;">O</span>
+        <span style="--i:9;">S</span>
+        <span style="--i:10">.</span>
+        <span style="--i:11">.</span>
+
+    </h1>
     <form asp-action="Crear">
         <div class="mb-3">
             <label asp-for="Monto_Del_Prestamo" class="form-label"></label>
             <input type="number" asp-for="Monto_Del_Prestamo" name="Monto_Del_Prestamo" placeholder="Digite El Monto" class="form-control" />
 
-            <span asp-validation-for="Monto_Del_Prestamo" class="text-danger"></span>
+            <span asp-validation-for="Monto_Del_Prestamo" class="text-secondary"></span>
         </div>
         <div class="mb-3">
             <label asp-for="Plazo" class="form-label"></label>
             <input type="number" asp-for="Plazo" name="Plazo" placeholder="Digite Su Plazo" class="form-control" />
-            <span asp-validation-for="Plazo" class="text-danger"></span>
+            <span asp-validation-for="Plazo" class="text-secondary"></span>
 
         </div>
         <div class="mb-3">
@@ -37,7 +62,7 @@
                    class="form-control" />
 
 
-            <span asp-validation-for="tasa_interes_anual" class="text-danger"></span>
+            <span asp-validation-for="tasa_interes_anual" class="text-secondary"></span>
 
         </div>
 
@@ -47,7 +72,7 @@
             @*<button type="submit" class="btnCalcular" asp-action="TablaAmortizada"><span>Go</span></button>
             *@
 
-            <button type="submit" class="btnCalcular" asp-action="TablaAmortizada">
+            <button type="submit" class="po" asp-action="TablaAmortizada">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -55,13 +80,7 @@
                 Visualizar
             </button>
 
-            <button type="submit" class="btnCalcular" asp-action="ImprimirVenta">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                PDF
-            </button>
+            
 
            
 
@@ -79,18 +98,6 @@
 
 
 
-<div class="btnTabla">
-
-
-    <a class="btnCalcular" asp-action="Crear">
-
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Reiniciar
-    </a>
-</div>
 
 
 

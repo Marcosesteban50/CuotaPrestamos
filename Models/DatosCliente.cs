@@ -6,6 +6,8 @@ namespace CuotaPrestamos.Models
     public class DatosCliente
     {
 
+
+        public int id { get; set; }
         [Required(ErrorMessage ="El Campo {0} Es Requerido")]
         [Null]
         [Display(Name ="Monto")]
