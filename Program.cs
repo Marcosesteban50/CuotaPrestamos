@@ -35,7 +35,7 @@ app.MapControllerRoute(
 IWebHostEnvironment env = app.Environment;
 
 Rotativa.AspNetCore.RotativaConfiguration.Setup
-    (env.WebRootPath, "CuotaPrestamos\\Windows\\");
+    (env.WebRootPath, "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\Windows\\");
 
 
 app.Run();

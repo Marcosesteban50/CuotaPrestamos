@@ -31,5 +31,8 @@ namespace CuotaPrestamos.Models
 
         public float UsuarioId { get; set; }
 
+        [Display(Name ="Moneda")]
+        public TipoOperacion TipoOperacionId { get; set; }
+
     }
 }

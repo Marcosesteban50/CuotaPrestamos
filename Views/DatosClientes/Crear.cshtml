@@ -39,25 +39,33 @@
         <span style="--i:7;">M</span>
         <span style="--i:8;">O</span>
         <span style="--i:9;">S</span>
-        <span style="--i:10">.</span>
-        <span style="--i:11">.</span>
+        
 
     </h1>
     <form asp-action="Crear">
         <div class="mb-3">
             <label asp-for="Monto_Del_Prestamo" class="form-label"></label>
+            <ion-icon name="cash-outline" class="iconMonto"></ion-icon>
             <input type="number" asp-for="Monto_Del_Prestamo" name="Monto_Del_Prestamo" placeholder="Digite El Monto" class="form-control" />
 
             <span asp-validation-for="Monto_Del_Prestamo" class="text-secondary"></span>
         </div>
         <div class="mb-3">
+            <label asp-for="TipoOperacionId" class="form-label"></label>
+            <ion-icon name="logo-bitcoin" class="iconMoneda"></ion-icon>
+            <select asp-for="TipoOperacionId" asp-items="Html.GetEnumSelectList<TipoOperacion>()"></select>
+
+        </div>
+        <div class="mb-3">
             <label asp-for="Plazo" class="form-label"></label>
+            <ion-icon name="hourglass-outline" class="iconPlazo"></ion-icon>
             <input type="number" asp-for="Plazo" name="Plazo" placeholder="Digite Su Plazo" class="form-control" />
             <span asp-validation-for="Plazo" class="text-secondary"></span>
 
         </div>
         <div class="mb-3">
             <label asp-for="tasa_interes_anual" class="form-label"></label>
+            <ion-icon name="alarm-outline" class="iconInteres"></ion-icon>
             <input type="number" asp-for="tasa_interes_anual" name="tasa_interes_anual" placeholder="Digite El Interes"
                    class="form-control" />
 
@@ -66,12 +74,19 @@
 
         </div>
 
+        
+       
+        
+
+
+        
+
+
+
 
         <div class="divsito">
 
-            @*<button type="submit" class="btnCalcular" asp-action="TablaAmortizada"><span>Go</span></button>
-            *@
-
+          
             <button type="submit" class="po" asp-action="TablaAmortizada">
                 <span></span>
                 <span></span>
@@ -93,7 +108,6 @@
 
 
 </div>
-
 
 
 

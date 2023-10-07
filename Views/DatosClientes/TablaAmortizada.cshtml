@@ -4,7 +4,7 @@
     ViewData["Title"] = "tabla";
 
     float Monto_Prestamo =Model.Monto_Del_Prestamo;
-    
+
     int Plazo = Model.Plazo;
     float InteresMensual = Model.tasa_interes_mensual;
     float InteresAnual = Model.tasa_interes_anual;
@@ -22,6 +22,12 @@
     Pago = InteresMensual / Pago;
     Pago = InteresMensual + Pago;
     Pago = Monto_Prestamo * Pago;
+
+    var USD = TipoOperacion.USD;
+    var AUD = TipoOperacion.AUD;
+    var DOP = TipoOperacion.DOP;
+
+    var TipoOperacionId = Model.TipoOperacionId;
 
 
 
@@ -63,56 +69,178 @@
                     </td>
                     @if (Pago < 0)
                     {
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Pago,2)  USD
+                            </td>
+                        }
+                        @if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Pago,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Pago,2)  DOP
+                            </td>
+                        }
 
-                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            @Math.Round(Pago,2)
-                        </td>
+
                     }
                     else
                     {
-                        <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
-                            @Math.Round(Pago,2)
-                        </td>
-                    }
-                    @if (Pago < 0)
-                    {
 
-                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            @Math.Round(InteresPagado,2)
-                        </td>
-                    }
-                    else
-                    {
-                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
-                            @Math.Round(InteresPagado,2)
-                        </td>
-                    }
-                    @if (Pago < 0)
-                    {
-
-                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            @Math.Round(CapitalPagado,2)
-                        </td>
-                    }
-                    else
-                    {
-                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >
-                            @Math.Round(CapitalPagado,2)
-                        </td>
-                    }
-
-                    @if (Monto_Prestamo < 1)
-                    {
-
-                        <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            @Math.Round(Monto_Prestamo,4)
-                        </td>
-                    }
-                    else
-                    {
+                        @if(TipoOperacionId == TipoOperacion.USD)
+                        {
                             <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            @Math.Round(Monto_Prestamo,2)
-                        </td>
+                                @Math.Round(Pago,2)  USD
+                            </td>
+                        }@if(TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Pago,2)  AUD
+                            </td>
+                        }@if(TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Pago,2)  DOP
+                            </td>
+                        }
+                       
+                    }
+                    @if (Pago < 0)
+                    {
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  USD
+                            </td>
+                        }
+                        @if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  DOP
+                            </td>
+                        }
+
+
+                    }
+                    else
+                    {
+
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  USD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(InteresPagado,2)  DOP
+                            </td>
+                        }
+
+                    }
+
+
+
+                    @if (Pago < 0)
+                    {
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  USD
+                            </td>
+                        }
+                        @if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  DOP
+                            </td>
+                        }
+
+
+                    }
+                    else
+                    {
+
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  USD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(CapitalPagado,2)  DOP
+                            </td>
+                        }
+
+                    }
+                    @if (Pago < 0)
+                    {
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  USD
+                            </td>
+                        }
+                        @if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:red;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  DOP
+                            </td>
+                        }
+
+
+                    }
+                    else
+                    {
+
+                        @if (TipoOperacionId == TipoOperacion.USD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  USD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.AUD)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  AUD
+                            </td>
+                        }@if (TipoOperacionId == TipoOperacion.DOP)
+                        {
+                            <td style="color:green;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                @Math.Round(Monto_Prestamo,2)  DOP
+                            </td>
+                        }
+
                     }
 
                     

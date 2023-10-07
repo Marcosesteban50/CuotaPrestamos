@@ -96,7 +96,7 @@ html {
         font-size: 60px;
         letter-spacing: 5px;
         transition: 0.5s;
-        -webkit-text-stroke: 0.1vw lightyellow;
+        -webkit-text-stroke: 0.1vh brown;
         text-transform:uppercase;
         
         margin-top:100px;
@@ -105,18 +105,48 @@ html {
         
     }
 
-       
 
 
-   
+
+
     .btnTabla {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 140px;
         gap: 30px;
+        color: saddlebrown;
+    }
+    .iconMonto {
+        font-size: 30px;
+        position: relative;
+        top: 8px;
+        left: 5px;
+        color: saddlebrown;
     }
 
+    .iconPlazo {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+        left: 5px;
+        color: saddlebrown;
+    }
+    .iconInteres {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+        left: 5px;
+        color: saddlebrown;
+    }
+
+    .iconMoneda {
+        font-size: 30px;
+        position: relative;
+        top: 7px;
+        left: 5px;
+        color: saddlebrown;
+    }
    
 }
 
@@ -125,16 +155,40 @@ html {
 
 @media (max-width: 948px) {
 
+    .iconMonto {
+        font-size: 30px;
+        position: relative;
+        top: 8px;
+        left: 5px;
+        color:saddlebrown;
+    }
 
+    .iconPlazo {
+        font-size: 30px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        color: saddlebrown;
+    }
 
+    .iconInteres {
+        font-size: 30px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        color: saddlebrown;
+    }
+
+    .iconMoneda {
+        font-size: 30px;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        color: saddlebrown;
+    }
 
     .form-control {
-        
         background-color: sandybrown;
-        
-       
-        
-        
     }
 
         .form-control:focus {
@@ -242,7 +296,7 @@ html {
 
         h1 {
             text-align: center;
-            color: transparent;
+            color: lightgoldenrodyellow;
             font-size: 30px;
             letter-spacing: 5px;
             transition: 0.5s;
@@ -699,3 +753,30 @@ label {
     background: sandybrown;
     transition: 0.2s;
 }
+
+
+select {
+
+    display:flex;
+    position: relative;
+    
+    padding: 10px 0;
+    background-color: saddlebrown;
+    border: none;
+    width: 80%;
+    margin-left:10%;
+    
+    text-align: center;
+    color: white;
+    appearance:menulist;
+    border-radius:2px;
+    transition:0.2s;
+    
+    
+}
+
+
+
+
+
+
