@@ -10,6 +10,7 @@ namespace CuotaPrestamos.Models
         public int id { get; set; }
         [Required(ErrorMessage ="El Campo {0} Es Requerido")]
         [Null]
+        
         [Display(Name ="Monto")]
         public float Monto_Del_Prestamo { get; set; }
         [Required(ErrorMessage = "El Campo {0} Es Requerido")]
@@ -31,7 +32,11 @@ namespace CuotaPrestamos.Models
 
         public float UsuarioId { get; set; }
 
+        
+       
+
         [Display(Name ="Moneda")]
+        
         public TipoOperacion TipoOperacionId { get; set; }
 
     }

@@ -59,7 +59,7 @@ namespace CuotaPrestamos.Controllers
                 return View(datosCliente);
             }
 
-
+            //Usando Session Para guardar 
             HttpContext.Session.SetString("DatosClientes", JsonConvert.SerializeObject(datosCliente));
 
 
@@ -74,6 +74,7 @@ namespace CuotaPrestamos.Controllers
             var datos = HttpContext.Session.GetString("DatosClientes");
             DatosCliente modelo = JsonConvert.DeserializeObject<DatosCliente>(datos);
 
+            //View De La Tabla A Imprimir
             return new ViewAsPdf("TablaAmortizadaVista", modelo)
             {
                 FileName = $"Tabla {DateTime.Today.ToString("MMMM-yyyy-dddd")}.pdf",

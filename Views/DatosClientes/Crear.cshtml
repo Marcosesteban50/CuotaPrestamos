@@ -46,34 +46,43 @@
         <div class="mb-3">
             <label asp-for="Monto_Del_Prestamo" class="form-label"></label>
             <ion-icon name="cash-outline" class="iconMonto"></ion-icon>
-            <input type="number" asp-for="Monto_Del_Prestamo" name="Monto_Del_Prestamo" placeholder="Digite El Monto" class="form-control" />
+            <input type="number" asp-for="Monto_Del_Prestamo" name="Monto_Del_Prestamo" maxlength="8" placeholder="Digite El Monto" class="form-control" />
 
             <span asp-validation-for="Monto_Del_Prestamo" class="text-secondary"></span>
         </div>
         <div class="mb-3">
             <label asp-for="TipoOperacionId" class="form-label"></label>
-            <ion-icon name="logo-bitcoin" class="iconMoneda"></ion-icon>
-            <select asp-for="TipoOperacionId" asp-items="Html.GetEnumSelectList<TipoOperacion>()"></select>
+            <i class="bi bi-coin iconMoneda"></i>
+            <select asp-for="TipoOperacionId">
+                
+                <option selected>Selecciona</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="DOP">DOP</option>
+                
+            </select>
 
         </div>
+
+       
         <div class="mb-3">
             <label asp-for="Plazo" class="form-label"></label>
             <ion-icon name="hourglass-outline" class="iconPlazo"></ion-icon>
-            <input type="number" asp-for="Plazo" name="Plazo" placeholder="Digite Su Plazo" class="form-control" />
+            <input type="number" asp-for="Plazo" name="Plazo" maxlength="8" placeholder="Digite Su Plazo" class="form-control" />
             <span asp-validation-for="Plazo" class="text-secondary"></span>
 
         </div>
         <div class="mb-3">
             <label asp-for="tasa_interes_anual" class="form-label"></label>
             <ion-icon name="alarm-outline" class="iconInteres"></ion-icon>
-            <input type="number" asp-for="tasa_interes_anual" name="tasa_interes_anual" placeholder="Digite El Interes"
+            <input type="number" asp-for="tasa_interes_anual" maxlength="8" name="tasa_interes_anual" placeholder="Digite El Interes"
                    class="form-control" />
 
 
             <span asp-validation-for="tasa_interes_anual" class="text-secondary"></span>
 
         </div>
-
+       
         
        
         
@@ -108,6 +117,8 @@
 
 
 </div>
+
+
 
 
 

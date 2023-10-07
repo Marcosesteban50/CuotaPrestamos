@@ -23,9 +23,7 @@
     Pago = InteresMensual + Pago;
     Pago = Monto_Prestamo * Pago;
 
-    var USD = TipoOperacion.USD;
-    var AUD = TipoOperacion.AUD;
-    var DOP = TipoOperacion.DOP;
+    
 
     var TipoOperacionId = Model.TipoOperacionId;
 
@@ -37,11 +35,11 @@
 
 
 
-<div class="DivEncimaTabla">
 
-    <table class="table table-borderless table-hover tableAmortizada">
+
+    <table class="tableAmortizadaPrincipal">
         <thead>
-            <tr class="tr1Amortizado" style="background:saddlebrown">
+            <tr class="tr1AmortizadoPrincipal">
 
                 <th>#</th>
                 <th>Pago</th>
@@ -62,7 +60,7 @@
             Monto_Prestamo = Monto_Prestamo - CapitalPagado;
 
             <tbody>
-                <tr class="trAmortizada">
+                <tr class="trAmortizadaPrincipal">
                     <td style="font-size:20px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
 
                         @i
@@ -251,7 +249,7 @@
 
         }
     </table>
-</div>
+
 
 
 

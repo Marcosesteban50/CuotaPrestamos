@@ -5,6 +5,7 @@ html {
 
 
 
+/*View De Pantalla Para PC*/
 
 @media (min-width: 768px) {
     html {
@@ -147,11 +148,15 @@ html {
         left: 5px;
         color: saddlebrown;
     }
+
+
    
 }
 
 
 
+
+/*View De Pantalla Para Celular*/
 
 @media (max-width: 948px) {
 
@@ -314,7 +319,7 @@ html {
 
 
 
-
+/*Boton De El Formulario (Visulizar)*/
 
 
 button {
@@ -331,8 +336,8 @@ button {
     transition: 0.3s;
     border: none;
     border-radius:10px;
-    /*border-top-left-radius:70px;
-    border-bottom-right-radius:70px;*/
+    border-top-left-radius:70px;
+    border-bottom-right-radius:70px;
 }
 
 
@@ -352,86 +357,7 @@ button {
         
     }
 
-     /*   button span:nth-child(1) {
-            left: 0;
-            bottom: 0;
-            width: 1px;
-            height: 100%;
-            transform: scaleY(0);
-            transform-origin: top;
-            transition: transform 0.06s;
-            
-        }*/
-
-  /*  button:hover span:nth-child(1) {
-        transform: scaleY(1);
-        transform-origin: bottom;
-        transition: transform 0.06s;
-        
-    }
-
-
-
-    button span:nth-child(2) {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.06s;
-        transition-delay: 0.06s;
-        
-    }
-
-    button:hover span:nth-child(2) {
-        transform: scaleX(1);
-        transform-origin: left;
-        transition: transform 0.06s;
-        transition-delay: 0.06s;
-        
-    }
-
-    button span:nth-child(3) {
-        right: 0;
-        bottom: 0;
-        width: 1px;
-        height: 100%;
-        transform: scaleY(0);
-        transform-origin: bottom;
-        transition: transform 0.06s;
-        transition-delay: 0.1s;
-        
-    }
-
-    button:hover span:nth-child(3) {
-        transform: scaleY(1);
-        transform-origin: top;
-        transition: transform 0.06s;
-        transition-delay: 0.1s;
-        
-    }
-
-    button span:nth-child(4) {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.06s;
-        transition-delay: 0.18s;
-        
-    }
-
-    button:hover span:nth-child(4) {
-        transform: scaleX(1);
-        transform-origin: right;
-        transition: transform 0.06s;
-        transition-delay: 0.18s;
-        
-    }
-*/
+   
 
 
 
@@ -439,210 +365,14 @@ button {
 
 
 
-/*Estilo De Boton Diferente*/
-
-
-/*.btnCalcular {
-            position: relative;
-            width: 50%;
-            height: 60px;
-
-            border: none;
-            background: #1a1e2d;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            font-size: 1.25em;
-            font-weight: 500;
-            color: ghostwhite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow:hidden;
-
-
-        }
-
-
-
-            .btnCalcular span {
-                display: inline-block;
-                z-index: 2;
-                line-height: 1em;
-                transition: 0.2s ease-in-out;
-            }
-
-
-
-            .btnCalcular:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-
-                transform: scaleX(0);
-                transition: transform 0.2s ease-in-out;
-                transform-origin: center;
-                border-bottom:2px solid gray;
-            }
-
-
-
-            .btnCalcular:hover::before {
-                transform: scaleX(1);
-
-            }
-
-            .btnCalcular:hover span {
-                color: ghostwhite;
-
-
-
-            }*/
 
 
 
 
 
-.btnCalcular {
-    position: relative;
-    display: inline-block;
-    padding: 10px 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    background: sandybrown;
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin: 0 15px;
-    transition: 0.3s;
-    border: none;
-    border-radius: 10px;
-    /*border-top-left-radius:70px;
-    border-bottom-right-radius:70px;*/
-}
 
 
 
-    .btnCalcular:hover {
-        color: sandybrown;
-        transition: 0.5s;
-        background: white;
-        letter-spacing: 4px;
-    }
-
-    .btnCalcular span {
-        display: block;
-        position: absolute;
-        background: white;
-    }
-
-
-
-
-
-/*
-a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    background: ghostwhite;
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin: 0 15px;
-    transition: 0s;
-    border: 1px solid gray;
-}
-
-    a:hover {
-        color: white;
-        transition: 0.5s;
-        background: black;
-        transition-delay: 0.5s;
-    }
-
-    a span {
-        display: block;
-        position: absolute;
-        background: black;
-    }
-
-        a span:nth-child(1) {
-            left: 0;
-            bottom: 0;
-            width: 3px;
-            height: 100%;
-            transform: scaleY(0);
-            transform-origin: top;
-            transition: transform 0.12s;
-        }
-
-    a:hover span:nth-child(1) {
-        transform: scaleY(1);
-        transform-origin: bottom;
-        transition: transform 0.12s;
-    }
-
-
-
-    a span:nth-child(2) {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.12s;
-        transition-delay: 0.12s;
-    }
-
-    a:hover span:nth-child(2) {
-        transform: scaleX(1);
-        transform-origin: left;
-        transition: transform 0.12s;
-        transition-delay: 0.12s;
-    }
-
-    a span:nth-child(3) {
-        right: 0;
-        bottom: 0;
-        width: 3px;
-        height: 100%;
-        transform: scaleY(0);
-        transform-origin: bottom;
-        transition: transform 0.12s;
-        transition-delay: 0.2s;
-    }
-
-    a:hover span:nth-child(3) {
-        transform: scaleY(1);
-        transform-origin: top;
-        transition: transform 0.12s;
-        transition-delay: 0.2s;
-    }
-
-    a span:nth-child(4) {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.12s;
-        transition-delay: 0.37s;
-    }
-
-    a:hover span:nth-child(4) {
-        transform: scaleX(1);
-        transform-origin: right;
-        transition: transform 0.12s;
-        transition-delay: 0.37s;
-    }*/
 
 
 
@@ -693,19 +423,20 @@ input::-webkit-inner-spin-button {
 
 
 
-
+/*Campos A Rellenar Del Formulario*/
 
 
 .form-control {
     position: relative;
     align-items: center;
     padding: 10px 0;
-    background-color:saddlebrown;
+    background-color: saddlebrown;
     border: none;
     width: 80%;
     margin-left: 10%;
     border-bottom: 1px solid brown;
-    border-radius:10px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -715,7 +446,7 @@ input::-webkit-inner-spin-button {
 
     .form-control:focus {
         background-color: saddlebrown;
-        box-shadow: none;e
+        box-shadow: none;
         border-bottom: 1px solid brown;
         color: white;
 
@@ -736,16 +467,88 @@ label {
     text-transform: uppercase;
 }
 
-.DivEncimaTabla {
-    background: #edc9af;
+
+select {
+    display: flex;
     position: relative;
-    top: 100px;
+    padding: 10px 0;
+    background-color: saddlebrown;
+    border: none;
+   
+    width: 80%;
+    margin-left: 10%;
     text-align: center;
-    box-shadow: 5px 5px 10px 0px;
-    border-radius: 20px;
+    color: white;
+    appearance: menulist;
+    border-radius: 2px;
 }
+
+
+    select:focus {
+        outline: none;
+    }
+
+
+
+
+
+
+
+    select > option {
+        background-color: lightgoldenrodyellow;
+        color: black;
+    }
+
+
+
+option:hover {
+    background-color: lime;
+}
+
+
+
+
+
+
+/*Seccion De Estilos De la Tabla Visualizada Y A Descargar*/
+
+
+th,td{
+    padding:10px 15px;
+}
+
+tbody{
+    filter:drop-shadow(10px 10px 10px sandybrown);
+}
+
+
+
+
+/*Estilos De Tabla Para Descargar*/
+
+
+.tr1Amortizado{
+  background:saddlebrown;
+    
+    text-align:center;
+    
+}
+
+
+   
 .tableAmortizada {
-    border-radius: 20px;
+    position: relative;
+    
+    
+    width: 60%;
+    height: 400px;
+    background-color: #ffc993;
+    border-radius: 10px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
     overflow: hidden;
 }
 
@@ -755,25 +558,84 @@ label {
 }
 
 
-select {
 
-    display:flex;
-    position: relative;
-    
-    padding: 10px 0;
-    background-color: saddlebrown;
-    border: none;
-    width: 80%;
-    margin-left:10%;
-    
+
+
+
+
+
+/*Estilos De Tabla Para Visualizar*/
+
+
+.tr1AmortizadoPrincipal {
+    background: saddlebrown;
     text-align: center;
-    color: white;
-    appearance:menulist;
-    border-radius:2px;
-    transition:0.2s;
-    
-    
 }
+
+
+tbody {
+    filter: drop-shadow(10px 10px 10px sandybrown);
+}
+
+.tableAmortizadaPrincipal {
+    position: relative;
+    width: 60%;
+    height: 400px;
+    background-color: #ffc993;
+    border-radius: 10px;
+    text-align: center;
+    left:50%;
+    top:15%;
+    transform:translate(-50%,+15%);
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+}
+
+.trAmortizadaPrincipal:hover {
+    background: sandybrown;
+    transition: 0.2s;
+}
+
+
+/*Estilos De Boton En Tabla Visualizada*/
+
+
+.btnCalcular {
+    position: relative;
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: sandybrown;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: 0.3s;
+    border: none;
+    
+    border-top-left-radius:70px;
+    border-bottom-right-radius:70px;
+}
+
+
+
+    .btnCalcular:hover {
+        color: sandybrown;
+        transition: 0.5s;
+        background: white;
+        letter-spacing: 4px;
+    }
+
+    .btnCalcular span {
+        display: block;
+        position: absolute;
+        background: white;
+    }
+
 
 
 
