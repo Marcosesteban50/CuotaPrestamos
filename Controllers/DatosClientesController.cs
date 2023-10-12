@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using Rotativa.AspNetCore;
 using System.Data;
 
+
 namespace CuotaPrestamos.Controllers
 {
 
@@ -52,7 +53,7 @@ namespace CuotaPrestamos.Controllers
 
         [HttpPost]
 
-        public IActionResult TablaAmortizada(DatosCliente datosCliente)
+        public async Task<IActionResult> TablaAmortizada(DatosCliente datosCliente)
         {
             if (!ModelState.IsValid)
             {
@@ -60,8 +61,11 @@ namespace CuotaPrestamos.Controllers
             }
 
             //Usando Session Para guardar 
-            HttpContext.Session.SetString("DatosClientes", JsonConvert.SerializeObject(datosCliente));
 
+            await Task.Run(() =>
+            {
+                HttpContext.Session.SetString("DatosClientes", JsonConvert.SerializeObject(datosCliente));
+            });
 
             return View(datosCliente);
         }
@@ -71,7 +75,7 @@ namespace CuotaPrestamos.Controllers
 
         public IActionResult ImprimirVenta()
         {
-            var datos = HttpContext.Session.GetString("DatosClientes");
+            var datos =  HttpContext.Session.GetString("DatosClientes");
             DatosCliente modelo = JsonConvert.DeserializeObject<DatosCliente>(datos);
 
             //View De La Tabla A Imprimir

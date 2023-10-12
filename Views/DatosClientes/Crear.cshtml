@@ -17,7 +17,7 @@
 
 <div class="con">
 
-    <h1 class="wavy">
+    <h1 class="wavy" data-aos="fade-right" data-aos-duration="2000">
         <span style="--i:1;">C</span>
         <span style="--i:2;">A</span>
         <span style="--i:3;">L</span>
@@ -42,7 +42,7 @@
         
 
     </h1>
-    <form asp-action="Crear">
+    <form asp-action="Crear" data-aos="fade-left" data-aos-duration="2000">
         <div class="mb-3">
             <label asp-for="Monto_Del_Prestamo" class="form-label"></label>
             <ion-icon name="cash-outline" class="iconMonto"></ion-icon>
@@ -95,8 +95,10 @@
 
         <div class="divsito">
 
-          
-            <button type="submit" class="po" asp-action="TablaAmortizada">
+            
+
+            <button type="submit" class="po" asp-action="TablaAmortizada"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -104,6 +106,7 @@
                 Visualizar
             </button>
 
+          </>
             
 
            
@@ -117,6 +120,7 @@
 
 
 </div>
+
 
 
 
