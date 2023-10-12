@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KbB9po1cfofkcTGhHI/4Xll4QRakC3XSo2x8VoXme7Q=",
+  "Hash": "xT5cPV+uA3TnJO2XlS0X5apMGlfJqUSPTRDecE99wVg=",
   "Source": "CuotaPrestamos",
   "BasePath": "_content/CuotaPrestamos",
   "Mode": "Default",
@@ -1137,6 +1137,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltoimage.exe",
+      "SourceId": "CuotaPrestamos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\",
+      "BasePath": "_content/CuotaPrestamos",
+      "RelativePath": "Rotativa/Windows/wkhtmltoimage.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rotativa\\Windows\\wkhtmltoimage.exe"
+    },
+    {
+      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltopdf.exe",
+      "SourceId": "CuotaPrestamos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\",
+      "BasePath": "_content/CuotaPrestamos",
+      "RelativePath": "Rotativa/Windows/wkhtmltopdf.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rotativa\\Windows\\wkhtmltopdf.exe"
     }
   ]
 }
