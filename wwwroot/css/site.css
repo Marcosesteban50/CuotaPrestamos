@@ -14,6 +14,90 @@ html {
 
 
 
+    .bi-arrow-counterclockwise{
+        font-size:50px;
+    }
+
+    .bi-filetype-pdf{
+        font-size:50px;
+    }
+    /*Estilos De Boton En Tabla Visualizada*/
+    .btnCalcular {
+        position: fixed;
+        top: 50%;
+        left: 12%;
+        display: flex;
+        padding: 5px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background: sandybrown;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 15px;
+        transition: 0.3s;
+        border: none;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+
+
+        .btnCalcular:hover {
+            color: sandybrown;
+            transition: 0.5s;
+            background: white;
+            letter-spacing: 4px;
+        }
+
+        .btnCalcular span {
+            display: block;
+            position: absolute;
+            background: white;
+        }
+
+
+
+
+
+
+
+    .btnCalcular1 {
+        position: fixed;
+        top: 50%;
+        left: 80%;
+        display: flex;
+        padding: 5px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background: sandybrown;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 15px;
+        transition: 0.3s;
+        border: none;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+
+
+        .btnCalcular1:hover {
+            color: sandybrown;
+            transition: 0.5s;
+            background: white;
+            letter-spacing: 4px;
+        }
+
+        .btnCalcular1 span {
+            display: block;
+            position: absolute;
+            background: white;
+        }
+
+
+
     .tableAmortizadaPrincipal {
         position: relative;
         width: 60%;
@@ -131,7 +215,7 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top:5%;
+        margin-top: 5%;
         gap: 30px;
         
     }
@@ -176,6 +260,97 @@ html {
 /*View De Pantalla Para Celular*/
 
 @media (max-width: 948px) {
+
+
+    .bi-arrow-counterclockwise {
+        font-size: 50px;
+    }
+
+    .bi-filetype-pdf {
+        font-size: 50px;
+    }
+
+    /*Estilos De Boton En Tabla Visualizada*/
+
+
+    .btnCalcular {
+        position: fixed;
+        top: 50%;
+        left: 0%;
+        display: flex;
+        padding: 3px 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background: sandybrown;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 15px;
+        transition: 0.3s;
+        border: none;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+
+
+        .btnCalcular:hover {
+            color: sandybrown;
+            transition: 0.5s;
+            background: white;
+            letter-spacing: 4px;
+        }
+
+        .btnCalcular span {
+            display: block;
+            position: absolute;
+            background: white;
+        }
+
+
+
+
+
+
+
+    .btnCalcular1 {
+        position: fixed;
+        top: 50%;
+        left: 80%;
+        display: flex;
+        padding: 3px 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background: sandybrown;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 15px;
+        transition: 0.3s;
+        border: none;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+
+
+        .btnCalcular1:hover {
+            color: sandybrown;
+            transition: 0.5s;
+            background: white;
+            letter-spacing: 4px;
+        }
+
+        .btnCalcular1 span {
+            display: block;
+            position: absolute;
+            background: white;
+        }
+
+
+
+
+
 
     .btnTabla {
         display: flex;
@@ -621,47 +796,5 @@ tbody {
     background: sandybrown;
     transition: 0.2s;
 }
-
-
-/*Estilos De Boton En Tabla Visualizada*/
-
-
-.btnCalcular {
-    position: relative;
-    display: inline-block;
-    padding: 10px 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    background: sandybrown;
-    letter-spacing: 2px;
-    font-size: 16px;
-    margin: 0 15px;
-    transition: 0.3s;
-    border: none;
-    
-    border-top-left-radius:70px;
-    border-bottom-right-radius:70px;
-}
-
-
-
-    .btnCalcular:hover {
-        color: sandybrown;
-        transition: 0.5s;
-        background: white;
-        letter-spacing: 4px;
-    }
-
-    .btnCalcular span {
-        display: block;
-        position: absolute;
-        background: white;
-    }
-
-
-
-
-
 
 
