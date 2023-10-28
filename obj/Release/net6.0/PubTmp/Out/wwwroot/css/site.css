@@ -13,6 +13,23 @@ html {
     }
 
 
+
+    .tableAmortizadaPrincipal {
+        position: relative;
+        width: 60%;
+        height: 400px;
+        background-color: #ffc993;
+        border-radius: 10px;
+        text-align: center;
+        left: 20%;
+        top:50px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        overflow: hidden;
+    }
+
     .divsito {
         margin-top: 30px;
         display: flex;
@@ -114,9 +131,9 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 140px;
+        margin-top:5%;
         gap: 30px;
-        color: saddlebrown;
+        
     }
     .iconMonto {
         font-size: 30px;
@@ -149,7 +166,7 @@ html {
         color: saddlebrown;
     }
 
-
+    
    
 }
 
@@ -159,6 +176,32 @@ html {
 /*View De Pantalla Para Celular*/
 
 @media (max-width: 948px) {
+
+    .btnTabla {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        gap: 30px;
+        color: saddlebrown;
+    }
+
+    .tableAmortizadaPrincipal {
+        position: relative;
+        width: 60%;
+        height: 400px;
+        background-color: #ffc993;
+        border-radius: 10px;
+        text-align: center;
+        left: 10%;
+        top: 50px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+        overflow: hidden;
+    }
+
 
     .iconMonto {
         font-size: 30px;
@@ -280,12 +323,7 @@ html {
 
 
 
-        .btnTabla {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 200px;
-        }
+       
 
 
         html {
@@ -577,22 +615,7 @@ tbody {
     filter: drop-shadow(10px 10px 10px sandybrown);
 }
 
-.tableAmortizadaPrincipal {
-    position: relative;
-    width: 60%;
-    height: 400px;
-    background-color: #ffc993;
-    border-radius: 10px;
-    text-align: center;
-    left:50%;
-    top:15%;
-    transform:translate(-50%,+15%);
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-top-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    overflow: hidden;
-}
+
 
 .trAmortizadaPrincipal:hover {
     background: sandybrown;

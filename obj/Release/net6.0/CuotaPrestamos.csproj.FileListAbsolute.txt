@@ -85,5 +85,5 @@ C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Release\net6
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Release\net6.0\CuotaPrestamos.pdb
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Release\net6.0\CuotaPrestamos.genruntimeconfig.cache
 C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\obj\Release\net6.0\ref\CuotaPrestamos.dll
-C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Release\net6.0\Rotativa\wkhtmltoimage.exe
-C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Release\net6.0\Rotativa\wkhtmltopdf.exe
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Release\net6.0\wwwroot\Rotativa\Windows\wkhtmltoimage.exe
+C:\Users\junio\OneDrive\Escritorio\c# CURSO FULL\CuotaPrestamos\bin\Release\net6.0\wwwroot\Rotativa\Windows\wkhtmltopdf.exe

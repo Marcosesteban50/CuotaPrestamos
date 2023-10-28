@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ded7h2YqyYqsMtNxUrFTJr/VZYBVMAf/IGyWGAOf1ic=",
+  "Hash": "PFs9Y2wLwbbEx3GM4IwIR4M/Ew4yqKOm41Qk7wo/VPg=",
   "Source": "CuotaPrestamos",
   "BasePath": "_content/CuotaPrestamos",
   "Mode": "Default",
@@ -1139,12 +1139,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Windows\\wkhtmltoimage.exe",
+      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltoimage.exe",
       "SourceId": "CuotaPrestamos",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\",
       "BasePath": "_content/CuotaPrestamos",
-      "RelativePath": "Windows/wkhtmltoimage.exe",
+      "RelativePath": "Rotativa/Windows/wkhtmltoimage.exe",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,15 +1153,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Windows\\wkhtmltoimage.exe"
+      "OriginalItemSpec": "wwwroot\\Rotativa\\Windows\\wkhtmltoimage.exe"
     },
     {
-      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Windows\\wkhtmltopdf.exe",
+      "Identity": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltopdf.exe",
       "SourceId": "CuotaPrestamos",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\",
       "BasePath": "_content/CuotaPrestamos",
-      "RelativePath": "Windows/wkhtmltopdf.exe",
+      "RelativePath": "Rotativa/Windows/wkhtmltopdf.exe",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,7 +1170,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Windows\\wkhtmltopdf.exe"
+      "OriginalItemSpec": "wwwroot\\Rotativa\\Windows\\wkhtmltopdf.exe"
     }
   ]
 }

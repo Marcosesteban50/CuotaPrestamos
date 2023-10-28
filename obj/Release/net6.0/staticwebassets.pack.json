@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\Imagenes\\FotoFondo1.jpg"
     },
     {
+      "Id": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltoimage.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\Windows\\wkhtmltoimage.exe"
+    },
+    {
+      "Id": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\Rotativa\\Windows\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\Windows\\wkhtmltopdf.exe"
+    },
+    {
       "Id": "C:\\Users\\junio\\OneDrive\\Escritorio\\c# CURSO FULL\\CuotaPrestamos\\wwwroot\\css\\StyleSheet.css",
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
